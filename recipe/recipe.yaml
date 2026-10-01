@@ -12,7 +12,7 @@ source:
   sha256: 454e7024d5a2cdf5851d19f039f5e46eee6dce847ed5ae9e2f409cad0d3cd264
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -63,7 +63,7 @@ tests:
       - diffle --version
 
 about:
-  homepage: https://github.com/moritzwilksch/diffle
+  homepage: https://diffle.app
   summary: Local git diff reviewer in the browser with line comments exported as agent prompts
   license: Apache-2.0
   license_file:
