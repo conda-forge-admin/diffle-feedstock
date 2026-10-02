@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.1.8"
+  version: "0.1.9"
 
 package:
   name: diffle
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://registry.npmjs.org/@moritzwilksch/diffle/-/diffle-${{ version }}.tgz
-  sha256: 454e7024d5a2cdf5851d19f039f5e46eee6dce847ed5ae9e2f409cad0d3cd264
+  sha256: 0fcc92072b051e874e01972851db2819d25408e16fcf4e9cd45de0f5bb2ccfe5
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
