@@ -56,6 +56,7 @@ tests:
         - diffle
       files:
         - etc/pixi/diffle/global-ignore-conda-prefix
+        - share/agent-skills/diffle/SKILL.md
         - if: unix
           then:
             - share/zsh/site-functions/_diffle
@@ -64,6 +65,13 @@ tests:
   - script:
       - diffle --help
       - diffle --version
+  - script:
+      - if: unix
+        then: agentskills validate $CONDA_PREFIX/share/agent-skills/diffle
+        else: 'agentskills validate %CONDA_PREFIX%\share\agent-skills\diffle'
+    requirements:
+      run:
+        - skills-ref
 
 about:
   homepage: https://diffle.app
